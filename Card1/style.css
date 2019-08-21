@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.card {
+  position: relative;
+  margin: 150px auto;
+  border: dashed 1px grey;
+  border-radius: 15px;
+  width: 35vw;
+  height: 30vw;
+}
+.card :hover {
+  transform: translateY(-3px);
+  border: solid 2px lightblue;
+}
+
+.card__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__icon {
+  text-align: center;
+}
+
+.card__description {
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.card__description--head {
+  font: 1.4em bold;
+}
+
+.card__description--main {
+  color: grey;
+}
+
+.card__description--browse:link,
+.card__description--browse:visited {
+  text-decoration: none;
+}
+
+.card__description--browse:hover {
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .card {
+    position: relative;
+    margin: 150px auto;
+    border: dashed 1px grey;
+    border-radius: 15px;
+    width: 400px;
+    height: 420px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

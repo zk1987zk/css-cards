@@ -1,0 +1,54 @@
+h4 {
+  font-size: h4-font;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.card {
+  width: 300px;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card .card__header:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card .card__header img {
+  width: 100%;
+}
+.card .card__header .red-block {
+  position: absolute;
+  bottom: 25%;
+  right: 20%;
+  color: white;
+  background-color: red;
+  padding: 1px 15px;
+  border-radius: 50px;
+}
+.card .card__header .icon-heart {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+}
+.card .card__description {
+  position: absolute;
+  left: 10%;
+  top: 63%;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixin";
+h4 {
+    font-size: h4-font;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.red-box {
+    background-color: red;
+}
+.green-box {
+    background-color: green;
+}
+.card {
+    width: 300px;
+    position: relative;
+    &:hover {
+        transform: translateY(-10px);
+    }
+    .card__header {
+        &:hover {
+            @include shadow();
+        }
+        img {
+            width: 100%;
+        }
+        .red-block {
+            position: absolute;
+            bottom: 25%;
+            right: 20%;
+            color: white;
+            background-color: red;
+            padding: 1px 15px;
+            border-radius: 50px;
+        }
+        .icon-heart {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+        }
+    }
+    .card__description {
+        position: absolute;
+        left: 10%;
+        top: 63%;
+        color: white;
+    }
+}

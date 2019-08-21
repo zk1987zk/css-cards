@@ -1,0 +1,36 @@
+h4 {
+    color: red;
+}
+
+.card {
+    width: 300px;
+    background:lightblue;
+    margin: 20% auto;
+}
+
+.card .card__header {
+    position: relative;
+}
+
+.card .card__header img {
+    width: 100%;
+}
+
+.card .card__body p {
+    margin: 0;
+}
+
+.card__button button {
+    margin: 0 auto;
+    display: block;
+}
+
+.card .card__header .red-block {
+    position: absolute;
+    background: red;
+    color:white;
+    top: 15px;
+    right: 25px;
+    padding: 5px 15px;
+}
+
